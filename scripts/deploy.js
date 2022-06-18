@@ -3,6 +3,8 @@ const main = async()=>{
 
   const frankyCoin = await frankyCoinFactory.deploy();
   await frankyCoin.deployed();
+
+  console.log('Contract Coin deployed on Address', frankyCoin.address);
 };
 
 const runMain = async()=>{

@@ -4,10 +4,12 @@ pragma solidity ^0.8.4;
 
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
-
+import 'hardhat/console.sol';
 contract FrankyCoin is ERC20, Ownable{
     
+    
     constructor()ERC20('Frank Coin','FC'){}
+
 
 
     function mint(uint256 amount)public payable{
